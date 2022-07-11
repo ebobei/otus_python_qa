@@ -11,25 +11,30 @@ def test_circle_name():
     circle = Circle(10)
     assert circle.name == "Circle"
 
+
 circle_area = [(0, 0),
                (1, 0.7853981633974483),
                (5, 19.634954084936208)
                ]
+
 
 @pytest.mark.parametrize("diametr, area", circle_area)
 def test_circle_area(diametr, area):
     circle = Circle(diametr)
     assert circle.area == area
 
+
 circle_perimetr = [(0, 0),
-                    (1, 3.141592653589793),
-                    (5, 15.707963267948966)
-                    ]
+                   (1, 3.141592653589793),
+                   (5, 15.707963267948966)
+                   ]
+
 
 @pytest.mark.parametrize("diametr, perimetr", circle_perimetr)
 def test_circle_area(diametr, perimetr):
     circle = Circle(diametr)
     assert circle.perimetr == perimetr
+
 
 def test_circle_add_area():
     circle = Circle(5)
@@ -41,6 +46,7 @@ def test_rectangle_name():
     rectangle = Rectangle(10, 5)
     assert rectangle.name == "Rectangle"
 
+
 rectangle_area = [(0, 1, 0),
                   (1, 2, 2)
                   ]
@@ -51,8 +57,9 @@ def test_rectangle_area(side_a, side_b, area):
     rectangle = Rectangle(side_a, side_b)
     assert rectangle.area == area
 
+
 rectangle_perimetr = [(1, 2, 6),
-                       (5, 4, 18)]
+                      (5, 4, 18)]
 
 
 @pytest.mark.parametrize("side_a, side_b, perimetr", rectangle_perimetr)
@@ -77,6 +84,7 @@ square_area = [(0, 0),
                (5, 25)
                ]
 
+
 @pytest.mark.parametrize("side, area", square_area)
 def test_square_area(side, area):
     square = Square(side)
@@ -84,9 +92,10 @@ def test_square_area(side, area):
 
 
 square_perimetr = [(0, 0),
-                    (1, 4),
-                    (5, 20)
-                    ]
+                   (1, 4),
+                   (5, 20)
+                   ]
+
 
 @pytest.mark.parametrize("side, perimetr", square_perimetr)
 def test_square_area(side, perimetr):
@@ -104,18 +113,22 @@ def test_triangle_name():
     triangle = Triangle(3, 4, 5)
     assert triangle.name == "Triangle"
 
+
 triangle_area = [(1, 1, 1, 0.4330127018922193),
                  (3, 4, 5, 6)
                  ]
+
 
 @pytest.mark.parametrize("side_a, side_b, side_c, area", triangle_area)
 def test_triangle_area(side_a, side_b, side_c, area):
     triangle = Triangle(side_a, side_b, side_c)
     assert triangle.area == area
 
+
 triangle_perimetr = [(1, 1, 1, 3),
-                      (3, 4, 5, 12)
-                      ]
+                     (3, 4, 5, 12)
+                     ]
+
 
 @pytest.mark.parametrize("side_a, side_b, side_c, perimetr", triangle_perimetr)
 def test_triangle_area(side_a, side_b, side_c, perimetr):

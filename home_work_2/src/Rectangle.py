@@ -2,7 +2,6 @@ from homework_2.src.Figure import Figure
 
 
 class Rectangle(Figure):
-
     name = "Rectangle"
 
     def __init__(self, side_a, side_b):

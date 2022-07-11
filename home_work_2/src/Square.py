@@ -1,7 +1,7 @@
 from homework_2.src.Figure import Figure
 
-class Square(Figure):
 
+class Square(Figure):
     name = "Square"
 
     def __init__(self, side):

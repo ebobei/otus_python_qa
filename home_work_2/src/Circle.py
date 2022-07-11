@@ -3,7 +3,6 @@ from math import pi
 
 
 class Circle(Figure):
-
     name = "Circle"
 
     def __init__(self, diametr):
