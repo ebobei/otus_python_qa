@@ -8,4 +8,3 @@ class Figure:
             return self.area + figure.area
         else:
             raise ValueError("Передана не геометрическая фигура!")
-

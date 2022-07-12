@@ -191,4 +191,3 @@ def test_triangle_add_negative_area():
     triangle = Triangle(3, 5, 5)
     square = Square(5)
     assert triangle.add_area(square) != 31
-
