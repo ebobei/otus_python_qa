@@ -24,10 +24,11 @@ def test_circle_area(diametr, area):
     assert circle.area == area
 
 
-circle_perimetr = [(0, 0),
-                   (1, 3.141592653589793),
-                   (5, 15.707963267948966)
-                   ]
+circle_perimetr = [
+    (0, 0),
+    (1, 3.141592653589793),
+    (5, 15.707963267948966)
+]
 
 
 @pytest.mark.parametrize("diametr, perimetr", circle_perimetr)
@@ -47,9 +48,10 @@ def test_rectangle_name():
     assert rectangle.name == "Rectangle"
 
 
-rectangle_area = [(0, 1, 0),
-                  (1, 2, 2)
-                  ]
+rectangle_area = [
+    (0, 1, 0),
+    (1, 2, 2)
+]
 
 
 @pytest.mark.parametrize("side_a, side_b, area", rectangle_area)
@@ -58,8 +60,10 @@ def test_rectangle_area(side_a, side_b, area):
     assert rectangle.area == area
 
 
-rectangle_perimetr = [(1, 2, 6),
-                      (5, 4, 18)]
+rectangle_perimetr = [
+    (1, 2, 6),
+    (5, 4, 18)
+]
 
 
 @pytest.mark.parametrize("side_a, side_b, perimetr", rectangle_perimetr)
@@ -79,10 +83,11 @@ def test_square_name():
     assert square.name == "Square"
 
 
-square_area = [(0, 0),
-               (1, 1),
-               (5, 25)
-               ]
+square_area = [
+    (0, 0),
+    (1, 1),
+    (5, 25)
+]
 
 
 @pytest.mark.parametrize("side, area", square_area)
@@ -91,10 +96,11 @@ def test_square_area(side, area):
     assert square.area == area
 
 
-square_perimetr = [(0, 0),
-                   (1, 4),
-                   (5, 20)
-                   ]
+square_perimetr = [
+    (0, 0),
+    (1, 4),
+    (5, 20)
+]
 
 
 @pytest.mark.parametrize("side, perimetr", square_perimetr)
@@ -114,9 +120,10 @@ def test_triangle_name():
     assert triangle.name == "Triangle"
 
 
-triangle_area = [(1, 1, 1, 0.4330127018922193),
-                 (3, 4, 5, 6)
-                 ]
+triangle_area = [
+    (1, 1, 1, 0.4330127018922193),
+    (3, 4, 5, 6)
+]
 
 
 @pytest.mark.parametrize("side_a, side_b, side_c, area", triangle_area)
@@ -125,9 +132,10 @@ def test_triangle_area(side_a, side_b, side_c, area):
     assert triangle.area == area
 
 
-triangle_perimetr = [(1, 1, 1, 3),
-                     (3, 4, 5, 12)
-                     ]
+triangle_perimetr = [
+    (1, 1, 1, 3),
+    (3, 4, 5, 12)
+]
 
 
 @pytest.mark.parametrize("side_a, side_b, side_c, perimetr", triangle_perimetr)
