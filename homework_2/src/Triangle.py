@@ -26,3 +26,4 @@ class Triangle(Figure):
     @property
     def perimetr(self):
         return self.side_a + self.side_b + self.side_c
+

@@ -19,3 +19,4 @@ class Rectangle(Figure):
     @property
     def perimetr(self):
         return (self.side_a + self.side_b) * 2
+

@@ -17,3 +17,4 @@ class Circle(Figure):
     @property
     def perimetr(self):
         return pi * self.diametr
+
