@@ -158,7 +158,7 @@ def test_triangle_negative_name():
 
 
 triangle_area = [
-    (1, 1, 1, 0.4330127018922193),
+    (13, 14, 15, 84),
     (3, 4, 5, 6)
 ]
 
